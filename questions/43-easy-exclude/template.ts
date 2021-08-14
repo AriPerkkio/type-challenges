@@ -1,1 +1,1 @@
-type MyExclude<T, U> = any
+type MyExclude<First, Second> = First extends Second ? never : First
