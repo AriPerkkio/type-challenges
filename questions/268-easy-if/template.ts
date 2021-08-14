@@ -1,1 +1,3 @@
-type If<C, T, F> = any
+type If<Condition extends boolean, Truthy, Falsy> = Condition extends true
+  ? Truthy
+  : Falsy
